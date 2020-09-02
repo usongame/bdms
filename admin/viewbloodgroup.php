@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>捐助平台</title>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -53,10 +53,10 @@ if($_SESSION['loginstatus']=="")
 
        <form method="post">
 <table border="0" align="center" width="400px" height="30px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">View Blood Group </td></tr>
+<tr><td colspan="2" align="center" class="toptd">查看分类 </td></tr>
 <tr><td align="center" style="padding-top:10px">
 <table border="1" align="center" width="80%" height="200px" >
-<tr><td>Blood Group Id </td><td align="center">Blood Group Name</td></tr>
+<tr><td>分类ID</td><td align="center">分类名称</td></tr>
 <tr><td>
 <?php
 $cn=mysqli_connect("mysql.xpni.cn","root","Xzqsyr20130926","bdms");

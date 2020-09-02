@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>捐助平台</title>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -63,9 +63,9 @@ if(isset($_POST["sbmt"]))
 ?>
        <form method="post">
 <table border="0" align="center" width="400" height="300px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">Update User</td></tr>
+<tr><td colspan="2" align="center" class="toptd">更新用户</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
-<tr><td class="lefttd">Select User Name</td><td><select name="s2" required><option value="">Select</option>
+<tr><td class="lefttd">选择用户名</td><td><select name="s2" required><option value="">选择</option>
 
 <?php
 $cn=makeconnection();
@@ -94,7 +94,7 @@ $s="select * from users";
 
 
 </select>
-<input type="submit" value="Show" name="show" formnovalidate="formnovalidate" />
+<input type="submit" value="查看" name="show" formnovalidate="formnovalidate" />
 <?php
 if(isset($_POST["show"]))
 {
@@ -114,13 +114,13 @@ $s="select * from users where username='" .$_POST["s2"] ."'";
 ?>
 
 </td></tr>
-<tr><td class="lefttd">Password</td><td><input type="password"  value= "<?php  if(isset($_POST["show"])){ echo $pass ;}  ?>"  required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password" name="t2"  /></td></tr>
-<tr><td class="lefttd">Confirm Password</td><td><input type="password"  value= "<?php  if(isset($_POST["show"])){ echo $pass ;}?>" name="t3" required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password"/></td></tr>
-<tr><td class="lefttd">Type Of User</td><td><select name="s1" required  ><option value="">Select</option>
-<option value="Admin" <?php if(isset($_POST["show"])&& $usertype=="Admin"){ echo "selected "; } ?>>Admin</option>
-<option value="General" <?php if(isset($_POST["show"])&& $usertype=="General"){ echo "selected "; } ?>>General</option>
+<tr><td class="lefttd">密码</td><td><input type="password"  value= "<?php  if(isset($_POST["show"])){ echo $pass ;}  ?>"  required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password" name="t2"  /></td></tr>
+<tr><td class="lefttd">确认密码</td><td><input type="password"  value= "<?php  if(isset($_POST["show"])){ echo $pass ;}?>" name="t3" required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password"/></td></tr>
+<tr><td class="lefttd">用户类型r</td><td><select name="s1" required  ><option value="">选择</option>
+<option value="Admin" <?php if(isset($_POST["show"])&& $usertype=="Admin"){ echo "selected "; } ?>>管理员</option>
+<option value="General" <?php if(isset($_POST["show"])&& $usertype=="General"){ echo "selected "; } ?>>一般用户</option>
 </select></td></tr>
-<tr><td>&nbsp;</td><td><input type="submit" value="UPDATE" name="sbmt"></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="更新" name="sbmt"></td></tr>
 </table>
 </form>
        </div>

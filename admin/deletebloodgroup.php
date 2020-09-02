@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>捐助平台</title>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -57,15 +57,15 @@ if(isset($_POST["sbmt"]))
 	$s="delete from bloodgroup where bg_id='"  . $_POST["s2"] ."'";
 	mysqli_query($cn,$s);
 	mysqli_close($cn);
-	echo "<script>alert('Record delete');</script>";
+	echo "<script>alert('数据删除');</script>";
 }
 
 ?>
        <form method="post">
 <table border="0" align="center" width="400" height="300px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">DELETE </td></tr>
+<tr><td colspan="2" align="center" class="toptd">删除 </td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
-<tr><td class="lefttd">Select Blood Group</td><td><select name="s2" required><option value="">Select</option>
+<tr><td class="lefttd">选择分类名称</td><td><select name="s2" required><option value="">选择</option>
 
 <?php
 $cn=makeconnection();
@@ -111,7 +111,7 @@ $s="select * from bloodgroup where bg_id='" .$_POST["s2"] ."'";
 </td></tr>
 
 
-<tr><td>&nbsp;</td><td><input type="submit" value="DELETE" name="sbmt"></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="删除" name="sbmt"></td></tr>
 </table>
 </form>
        </div>

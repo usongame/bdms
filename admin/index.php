@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>图书捐助平台</title>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -45,7 +45,7 @@ if($_SESSION['loginstatus']=="")
        </div>
        <div style="width:800px;float:left">
 <div style="height:500px; width:700px; margin:auto; margin-top:50px; margin-bottom:50px; background-color:#f8f1e4; border:2px solid red; box-shadow:4px 1px 20px black;">
-    <img src="images/admin.png" height="500px"/>
+   <h1>欢迎来到管理后台</h1>
         
 			
 			

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>捐助平台</title>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -56,15 +56,15 @@ if(isset($_POST["sbmt"]))
 	$s="update bloodgroup set bg_name='" .$_POST["t2"] ."' where bg_id='" . $_POST["s2"] ."'";
 	mysqli_query($cn,$s);
 	mysqli_close($cn);
-	echo "<script>alert('Record Update');</script>";
+	echo "<script>alert('分类更新成功');</script>";
 }
 
 ?>
        <form method="post">
 <table border="0" align="center" width="400" height="300px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">Update Blood Group</td></tr>
+<tr><td colspan="2" align="center" class="toptd">更新分类名称</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
-<tr><td class="lefttd">Select Blood Group </td><td><select name="s2" required><option value="">Select</option>
+<tr><td class="lefttd">选择分类名称 </td><td><select name="s2" required><option value="">选择</option>
 
 <?php
 $cn=makeconnection();
@@ -93,7 +93,7 @@ $s="select * from bloodgroup";
 
 
 </select>
-<input type="submit" value="Show" name="show"  formnovalidate="formnovalidate" />
+<input type="submit" value="查看" name="show"  formnovalidate="formnovalidate" />
 <?php
 if(isset($_POST["show"]))
 {
@@ -113,9 +113,9 @@ $s="select * from bloodgroup where bg_id='" .$_POST["s2"] ."'";
 ?>
 
 </td></tr>
-<tr><td class="lefttd">Blood Group Name</td><td><input type="text"  name="t2"  value="<?php  if(isset($_POST["show"])){ echo $bg_name ;}    ?>"  required="required"  /></td></tr> </td></tr>
+<tr><td class="lefttd">分类名称</td><td><input type="text"  name="t2"  value="<?php  if(isset($_POST["show"])){ echo $bg_name ;}    ?>"  required="required"  /></td></tr> </td></tr>
 
-<tr><td>&nbsp;</td><td><input type="submit" value="UPDATE" name="sbmt"></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="更新" name="sbmt"></td></tr>
 </table>
 </form>
        </div>

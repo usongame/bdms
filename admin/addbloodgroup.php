@@ -55,18 +55,18 @@ if(isset($_POST["sbmt"]))
 	$s="insert into bloodgroup(bg_name) values('" . $_POST["t1"] . "')";
 	mysqli_query($cn,$s);
 	mysqli_close($cn);
-	echo "<script>alert('Record Save');</script>";
+	echo "<script>alert('分类添加成功');</script>";
 }
 
 ?>
 
        <form method="post">
 <table border="0" align="center" width="400" height="300px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">Add Blood Group</td></tr>
+<tr><td colspan="2" align="center" class="toptd">添加图书分类</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
-<tr><td class="lefttd">Blood Group Name</td><td><input type="text" name="t1" required="required"/></td></tr>
+<tr><td class="lefttd">分类名称</td><td><input type="text" name="t1" required="required"/></td></tr>
 
-<tr><td>&nbsp;</td><td><input type="submit" value="SAVE" name="sbmt"></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="保存" name="sbmt"></td></tr>
 </table>
 </form>
        </div>

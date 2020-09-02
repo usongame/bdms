@@ -56,23 +56,23 @@ if(isset($_POST["sbmt"]))
 	$s="insert into users values('" . $_POST["t1"] . "','" .$_POST["t2"] . "','". $_POST["s1"] ."')";
 	mysqli_query($cn,$s);
 	mysqli_close($cn);
-	echo "<script>alert('Record Save');</script>";
+	echo "<script>alert('添加成功');</script>";
 }
 
 ?>
 
        <form method="post">
 <table border="0" align="center" width="400" height="300px" class="shaddoww">
-<tr><td colspan="2" align="center" class="toptd">Add User</td></tr>
+<tr><td colspan="2" align="center" class="toptd">添加用户</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
-<tr><td class="lefttd">User Name</td><td><input type="text" name="t1" required="required" pattern="[a-zA-Z _]{3,15}" title="please enter only character between 3 to 15 for user name"/></td></tr>
-<tr><td class="lefttd">Password</td><td><input type="password" name="t2"  required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password" /></td></tr>
-<tr><td class="lefttd">Confirm Password</td><td><input type="password" name="t3" required="required" pattern="[a-zA-Z0-9]{3,10}" title="please enter only character and numbers between 3 to 10 for password" /></td></tr>
-<tr><td class="lefttd">Type Of User</td><td><select name="s1" required><option value="">Select</option>
-<option value="Admin">Admin</option>
-<option value="General">General</option>
+<tr><td class="lefttd">用户名</td><td><input type="text" name="t1" required="required" /></td></tr>
+<tr><td class="lefttd">密码</td><td><input type="password" name="t2"  required="required" /></td></tr>
+<tr><td class="lefttd">确认密码</td><td><input type="password" name="t3" required="required" /></td></tr>
+<tr><td class="lefttd">用户类型</td><td><select name="s1" required><option value="">选择</option>
+<option value="Admin">管理员</option>
+<option value="General">一般用户</option>
 </select></td></tr>
-<tr><td>&nbsp;</td><td><input type="submit" value="SAVE" name="sbmt"></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="保存"" name="sbmt"></td></tr>
 </table>
 </form>
        </div>

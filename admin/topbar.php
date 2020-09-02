@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>捐助平台</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
 <div class="wrap">
 		<ul class="nav">
 			
-            <li><a href="../index.php" target="_blank">Preview Website</a></li>
-             <li><a href="logout.php">Log Out</a></li>
+            <li><a href="../index.php" target="_blank">回到前端</a></li>
+             <li><a href="logout.php">退出系统</a></li>
 			<li>
               
             </li>
