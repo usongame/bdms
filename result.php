@@ -81,19 +81,20 @@ $s="select * from donarregistration,bloodgroup where donarregistration.b_id='". 
 
                 <tr><td width="100px"  align="center" style="vertical-align:middle">
 
- <a href="doner_pic<?php echo $data[8] ?>"data-lightbox="image-1"> <img src="doner_pic/<?php echo $data[8] ?>" height="100px" width="100px" style="margin:auto; padding-left:70px; padding-right:50px; float:left" /></a></td>
+ <a href="doner_pic<?php echo $data[8] ?>"data-lightbox="image-1"> <img src="doner_pic/<?php echo $data[8] ?>" height="100px" width="100px" style="margin:auto; padding-left:10px; padding-right:50px; float:left" /></a></td>
 
 
                     <td width="500px" height="50px" style="vertical-align:top">
                         
 
                         <table cellpadding="0" width="500px" height="150px" style="border:none">
-           <tr><td colspan="2">&nbsp;</td></tr>
-                <tr><td><span class="title">捐助者姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td><?php echo $data[1]; ?></td><td align="left" width="50%"></td></tr>
+           <tr><td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+                <tr><td><span class="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td></td></tr>
+                <tr><td><span class="title">捐助者</span></td><td><?php echo $data[1]; ?></td></tr>
                  <tr><td><span class="title">性别</span></td><td><?php echo $data[2]; ?></td></tr>
                   <tr><td style="width:24px"><span class="title">联系电话:</span></td><td><?php echo $data[4]; ?></td></tr>
                   <tr><td><span class="title">邮箱</span></td><td><?php echo $data[6]; ?></td></tr>
-                   <tr><td><span class="title">捐助图书分类</span></td><td><?php echo $data[10]; ?></td></tr>
+                   <tr><td><span class="title">图书分类</span></td><td><?php echo $data[10]; ?></td></tr>
                      <tr><td colspan="2">&nbsp;</td></tr>
                      
                      

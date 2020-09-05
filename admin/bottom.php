@@ -16,7 +16,7 @@
 	    </ul>
 	</div>
 		<div class="copy">
-				<p class="title">© GXXXXX 张三</p>
+				<p class="title">© 2020 G18190209  边成帅</p>
 		</div>
 	<div class="clear"></div>
 </div>

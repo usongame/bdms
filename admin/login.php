@@ -92,7 +92,7 @@
 			
 	</div>
 		<div class="copy">
-			<p class="title">© All Rights Reserved | Design by Mr. Bhatia |</p>
+        <p class="title">© 2020 G18190209  边成帅</p>
 		</div>
 	<div class="clear"></div>
 </div>

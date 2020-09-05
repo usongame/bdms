@@ -150,10 +150,10 @@ if (file_exists($target_file)) {
 	mysqli_close($cn);
 	if($s>0)
 	{
-	echo "<script>alert('注册成功');</script>";
+	
 	}
 	else
-	{echo "<script>alert('注册失败');</script>";
+	{
 	}
 		} else{
 			echo "上传图片失败.";

@@ -60,7 +60,7 @@
 
 <tr><td class="lefttd"><a href="viewbloodgroup.php">查看图书分类</a></td></tr>
 <tr><td class="lefttd"><a href="allrequest.php">查看捐助</a></td></tr>
-
+<tr><td class="lefttd"><a href="alldonars.php">查看注册用户</a></td></tr>
 </table></div></div>
 
 </body>
